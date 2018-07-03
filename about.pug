@@ -7,6 +7,7 @@ html(lang="ru")
 		meta(name="copyright" 	content="Hugant Mirron")
 		meta(name="author" 			content="Hugant Mirron" lang="ru")
 
+		link(rel="icon" href="images/icon.ico" type="image/x-icon")
 		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
 		link(href="css/bootstrap4.min.css" rel="stylesheet")
@@ -18,12 +19,18 @@ html(lang="ru")
 			a(href="index.html" class="navbar-brand ml-lg-5") 100 Days of JavaScript
 			div(id="navbarToggler" class="collapse navbar-collapse")
 				ul.navbar-nav.ml-auto.mr-5
+					li.nav-item.mr-3
+						.btn-group(style="margin-top: 1px;")
+							a.btn.text-light.bg-dark.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=":active {backgound: 'red'}") Hugant Mirron
+							.dropdown-menu(x-placement="bottom-start")
+								a.dropdown-item(href="#") Профиль
+								a.dropdown-item(href="#") Выйти
 					li.nav-item
-						a(href="index.html").nav-link Главная
+						a.nav-link(href="index.html") Главная
 					li.nav-item.ml-lg-3
-						a(href="days.html").nav-link Days
+						a.nav-link(href="days.html") Days
 					li.nav-item.ml-lg-3.active
-						a(href="about.html").nav-link О нас
+						a.nav-link(href="about.html") О нас
 
 		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")

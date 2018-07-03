@@ -8,6 +8,7 @@ html(lang="ru")
 		meta(name="author" 			content="Hugant Mirron" lang="ru")
 		meta(name="description" conent="100 Days of JavaScript - Hugant Mirron. Создаю что-то новое для меня на языке JavaScript.")
 
+		link(rel="icon" href="images/icon.ico" type="image/x-icon")
 		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
 		link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
 		link(href="css/bootstrap4.min.css" rel="stylesheet")
@@ -15,25 +16,38 @@ html(lang="ru")
 	body
 		.jumbotron.jumbotron-fullheight.bg-growth.bg-dark.text-white.mb-0.pt-3.radius-0
 			nav.navbar.navbar-expand-lg.navbar-dark
-				button(class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="")
+				button.navbar-toggler.navbar-toggler-right( type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="")
 					span.navbar-toggler-icon
-				a(href="index.html" class="navbar-brand ml-lg-5") 100 Days of JavaScript
-				div(id="navbarToggler" class="collapse navbar-collapse")
+				a.navbar-brand.ml-lg-5(href="index.html")
+					h5.d-none.d-sm-block.mb-0 100 Days of JavaScript
+					h6.d-block.d-sm-none.mb-0 100 Days of JavaScript
+				div#navbarToggler.collapse.navbar-collapse
 					ul.navbar-nav.ml-auto.mr-5
+						li.nav-item.mr-3
+							.btn-group(style="margin-top: 1px;")
+								a.btn.text-light.bg-dark.dropdown-toggle(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Hugant Mirron
+								.dropdown-menu(x-placement="bottom-start")
+									a.dropdown-item(href="#") Профиль
+									a.dropdown-item(href="#") Выйти
 						li.nav-item.active
-							a(href="index.html").nav-link Главная
+							a.nav-link(href="index.html") Главная
 						li.nav-item.ml-lg-3
-							a(href="days.html").nav-link Days
+							a.nav-link(href="days.html") Days
 						li.nav-item.ml-lg-3
-							a(href="about.html").nav-link О нас
+							a.nav-link(href="about.html") О нас
 
 
 
-			.container
+			.container.mt-xl-5
 				.row
 					.col-xl-7.mt-5
-						h1.display-4.text-light.display-fix 100 Days<br>of JavaScript<br>by <a href="https://hugant.github.io" class="alert-link text-secondary">Hugant Mirron</a>
-						a(href="days.html").btn.btn-outline-secondary.mt-4 Посмотреть
+						.d-none.d-sm-block
+							h1.display-4.text-light 100 Days<br>of JavaScript<br>by <a href="https://hugant.github.io" class="alert-link text-secondary">Hugant Mirron</a>
+							a.btn.btn-outline-secondary.mt-4(href="days.html") Посмотреть
+
+						.d-block.d-sm-none.mt-3
+							h1.display-6.text-light 100 Days<br>of JavaScript<br>by <a href="https://hugant.github.io" class="alert-link text-secondary">Hugant Mirron</a>
+							a.btn.btn-outline-secondary.mt-4(href="days.html") Посмотреть
 
 
 		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
