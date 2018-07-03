@@ -1,0 +1,13 @@
+::selection {
+	background: #fb8f53;
+	color: #fff;
+}
+
+::-moz-selection {
+	background: #fb8f53;
+}
+
+::-webkit-selection {
+	background: #fb8f53;
+	color:#fff;
+}
