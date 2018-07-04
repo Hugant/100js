@@ -5,9 +5,19 @@
 
 ::-moz-selection {
 	background: #fb8f53;
+	color:#fff;
 }
 
 ::-webkit-selection {
 	background: #fb8f53;
 	color:#fff;
+}
+
+.table-wrapper {
+	display: table;
+}
+
+.table-wrapper .cell {
+	display: table-cell;
+	vertical-align: middle;
 }

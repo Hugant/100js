@@ -30,23 +30,22 @@ html(lang="ru")
 						a.nav-link(href="index.html") Главная
 					li.nav-item.ml-lg-3.active
 						a.nav-link(href="days.html") Days
-					li.nav-item.ml-lg-3
-						a.nav-link(href="about.html") О нас
 
 		.container.mt-2.mt-md-4
 			.row
 				.col-md-6
 					h2 Что это?
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					p(style="text-indent: 3rem;") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				.col-md-6.d-flex
 					.card.align-self-center
 						.card-body
 							h6.card-title Узнавайте о выходе нового дня первым! Подпишитесь на рассылку!
 							form
-								.from-group
-								label(for="emailInput") Введите email
-								input(type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Введите email")
-								small#emailHelp.form-text.text-muted Мы не будем распространять ваш email.
+								.from-group.mb-3
+									label(for="emailInput") Введите email
+									input(type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Введите email")
+									small#emailHelp.form-text.text-muted Мы не будем распространять ваш email.
+								button.btn.btn-secondary(type="submit") Отправить
 
 
 		.container.mt-5.mb-5
@@ -58,75 +57,149 @@ html(lang="ru")
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 1 - The first day
 							p.card-text Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 2222222
 				.col-sm-12.col-md-6.col-lg-4.d-flex.align-items-stretch
 					.card.mt-4
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 2 - The second day
 							p.card-text Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 4345345
 				.col-sm-12.col-md-6.col-lg-4.d-flex.align-items-stretch
 					.card.mt-4
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 3 - The third day
 							p.card-text Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2 
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 533333
 				.col-sm-12.col-md-6.col-lg-4.d-flex.align-items-stretch
 					.card.mt-4
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 4 - The fourth day
 							p.card-text Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2 
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 12122
 				.col-sm-12.col-md-6.col-lg-4.d-flex.align-items-stretch
 					.card.mt-4
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 5 - The fifth day
 							p.card-text Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2 
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 5
 				.col-sm-12.col-md-6.col-lg-4.d-flex.align-items-stretch
 					.card.mt-4
 						.card-body.d-flex.align-items-start.flex-column
 							h4.card-title Day 6 - The sixth day
 							p.card-text Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.Something about this day, what I did and how results.
-							div.mt-auto
+							.mt-auto.d-flex.w-100
 								a(href="#").btn.btn-secondary.mr-2 Посмотреть
-								a(href="#").btn.btn-secondary 
+								a(href="#").btn.btn-secondary.mr-2
 									span.fa.fa-github-alt.mr-2
 									span.d-xl-inline-block GitHub
+								.ml-auto.d-flex.d-lg-none.d-xl-flex
+									p.my-auto
+										span.fa.fa-eye.mr-1
+										span.fixedNumber 1212111
+
 
 		footer.ht-footer.bg-dark.w-100.position-absolute.p-3.text-light.h-15
 			.container
-				.row
-					.col-md-4.text-center.text-lg-left
-						div.p-2 Copyright by <a href="hugant.github.io" class="text-secondary">Hugant Mirron</a>
-					.col-md-4.text-center.text-lg-center
-						h3.mb-0
-							a.navbar-brand.text-light.m-0(href="index.html") 100 Days of JavaScript
-					.col-md-4.text-center.text-lg-right
-						div.p-2 Main in details
+				.row.d-flex.align-items-stretch
+					.col-md-4.d-flex.flex-column.text-center.text-md-left
+						div.pb-2 Copyright by <a href="https://hugant.github.io" class="text-secondary">Hugant Mirron</a>
+						div Supported by <a href="https://artyshko.ru" class="text-secondary"> Fulliton</a>
+					.col-md-4.d-flex.align-items-center.justify-content-center
+						a.navbar-brand.text-light.m-0(href="index.html") 100 Days of JavaScript
+					.col-md-4.d-flex.align-items-center.justify-content-center.justify-content-md-end
+						div Main in details
 					
 
 		script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
 		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")
+
+		script.
+			var labels = $(".fixedNumber");
+
+			function fixNumber(number) {
+				if (number > 999999)
+					if ((number / 1000000).toFixed(1).length > 3)
+						return (number / 1000000).toFixed(0) + "M"
+					else
+						return (number / 1000000).toFixed(1) + "M";
+				else if (number > 999)
+					if ((number / 1000).toFixed(1).length > 3)
+						return (number / 1000).toFixed(0) + "K"
+					else
+						return (number / 1000).toFixed(1) + "K";
+
+				return number;
+			}
+
+			labels.each(function() {
+				$(this)[0].innerHTML = fixNumber($(this)[0].innerHTML);
+			});
+
+		<!-- Yandex.Metrika counter -->
+		script.
+			(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+							try {
+									w.yaCounter49471468 = new Ya.Metrika2({
+											id:49471468,
+											clickmap:true,
+											trackLinks:true,
+											accurateTrackBounce:true,
+											webvisor:true
+									});
+							} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+					if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+			})(document, window, "yandex_metrika_callbacks2");
 
