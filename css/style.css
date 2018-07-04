@@ -21,3 +21,15 @@
 	display: table-cell;
 	vertical-align: middle;
 }
+
+.iframe-wrapper {
+	display: flex;
+	flex-direction: column;
+  min-height: 100vh;
+}
+
+.iframe-wrapper iframe {
+	background: #000;
+  border: none;
+  flex-grow: 1;
+}

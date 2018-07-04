@@ -1,0 +1,65 @@
+doctype html
+html(lang="ru")
+	head
+		title 100 Days of JavaScript - Hugant Mirron
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="copyright" 	content="Hugant Mirron")
+		meta(name="author" 			content="Hugant Mirron" lang="ru")
+
+		link(rel="icon" href="images/icon.ico" type="image/x-icon")
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
+		link(href="css/bootstrap4.min.css" rel="stylesheet")
+		link(href="css/style.css" rel="stylesheet")
+	body
+		nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+			button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="")
+				span.navbar-toggler-icon
+			a(href="index.html" class="navbar-brand ml-lg-5") 100 Days of JavaScript
+			div(id="navbarToggler" class="collapse navbar-collapse")
+				ul.navbar-nav.ml-auto.mr-5
+					li.nav-item.mr-3
+						.btn-group(style="margin-top: 1px;")
+							a.btn.text-light.bg-dark(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=":active {backgound: 'red'}").dropdown-toggle Hugant Mirron
+							.dropdown-menu(x-placement="bottom-start")
+								a.dropdown-item(href="#") Профиль
+								a.dropdown-item(href="#") Выйти
+					li.nav-item
+						a.nav-link(href="index.html") Главная
+					li.nav-item.ml-lg-3
+						a.nav-link(href="days.html") Days
+
+		iframe(src="#")
+
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous")
+
+
+	<!-- Yandex.Metrika counter -->
+		script.
+			(function (d, w, c) {
+					(w[c] = w[c] || []).push(function() {
+							try {
+									w.yaCounter49471468 = new Ya.Metrika2({
+											id:49471468,
+											clickmap:true,
+											trackLinks:true,
+											accurateTrackBounce:true,
+											webvisor:true
+									});
+							} catch(e) { }
+					});
+
+					var n = d.getElementsByTagName("script")[0],
+							s = d.createElement("script"),
+							f = function () { n.parentNode.insertBefore(s, n); };
+					s.type = "text/javascript";
+					s.async = true;
+					s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+					if (w.opera == "[object Opera]") {
+							d.addEventListener("DOMContentLoaded", f, false);
+					} else { f(); }
+			})(document, window, "yandex_metrika_callbacks2");
