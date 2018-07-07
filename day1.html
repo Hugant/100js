@@ -14,8 +14,9 @@
   </head>
   <body>
     <div class="iframe-wrapper">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand ml-lg-5" href="index.html">100 Days of JavaScript</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark d-flex align-items-center">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand ml-lg-5" href="index.html"><span class="d-sm-none">100 Days of JS </span><span class="d-none d-sm-inline mr-3">100 Days of JavaScript</span><span class="d-none d-sm-inline d-lg-none mr-3">-</span><span class="d-none d-sm-inline d-lg-none">Roguelike game</span></a>
+        <div class="navbar-brand w-100 d-none d-lg-flex d-lg-flex align-items-center justify-content-center">Roguelike game</div>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav ml-auto mr-5">
             <li class="nav-item mr-3">
@@ -29,6 +30,17 @@
         </div>
       </nav>
       <iframe src="days/Day19/Day19.html" height="100%" width="100%" border="none" sandbox="allow-scripts allow-same-origin" seamless></iframe>
+      <div class="day-nav-wrapper d-flex justify-content-center justify-content-md-end px-2">
+        <nav class="day-nav">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Предыдущий день</a></li>
+            <li class="page-item d-none d-md-block"><a class="page-link" href="#">18</a></li>
+            <li class="page-item active"><a class="page-link" href="#">19</a></li>
+            <li class="page-item d-none d-md-block"><a class="page-link" href="#">20</a></li>
+            <li class="page-item"><a class="page-link" href="#">Следующий день</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </body>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

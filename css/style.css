@@ -33,3 +33,31 @@
   border: none;
   flex-grow: 1;
 }
+
+.day-nav-wrapper {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+}
+
+.day-nav .pagination li a {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background: inherit;
+	border-color: #373193;
+	color: white;
+	height: 100%;
+	transition-duration: .3s;
+}
+
+.day-nav .pagination .page-item a:hover {
+	background: #373193;
+	transition-duration: .3s;
+}
+
+.day-nav .pagination .active a {
+	background: #373193;
+	border-color: #373193;
+}
