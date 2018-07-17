@@ -41,7 +41,7 @@
 	right: 0;
 }
 
-.day-nav .pagination li a {
+.day-nav .pagination .page-item .page-link {
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -52,12 +52,12 @@
 	transition-duration: .3s;
 }
 
-.day-nav .pagination .page-item a:hover {
+.day-nav .pagination .page-item .page-link:hover {
 	background: #373193;
 	transition-duration: .3s;
 }
 
-.day-nav .pagination .active a {
+.day-nav .pagination .active .page-link {
 	background: #373193;
 	border-color: #373193;
 }
