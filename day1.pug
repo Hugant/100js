@@ -12,7 +12,7 @@ html(lang="ru")
 		link(href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
 		link(href="css/bootstrap4.min.css" rel="stylesheet")
 		link(href="css/style.css" rel="stylesheet")
-	body
+	body.bg-dark
 		.iframe-wrapper
 			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.d-flex.align-items-center
 				button.navbar-toggler.navbar-toggler-right(type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" style="")
@@ -36,21 +36,14 @@ html(lang="ru")
 						li.nav-item.ml-lg-3
 							a.nav-link(href="days.html") Days
 
-			iframe(src="days/Day19/Day19.html" height="100%" width="100%" border="none" sandbox="allow-scripts allow-same-origin" seamless)
-
-			.day-nav-wrapper.d-flex.justify-content-center.justify-content-md-end.px-2
-				nav.day-nav
-					ul.pagination
-						li.page-item
-							a.page-link(href="#") Предыдущий день
-						li.page-item.d-none.d-md-block
-							a.page-link(href="#") 18
-						li.page-item.active
-							a.page-link(href="#") 19
-						li.page-item.d-none.d-md-block
-							a.page-link(href="#") 20
-						li.page-item
-							a.page-link(href="#") Следующий день
+			iframe.d-none.d-md-block(src="days/Day19/Day19.html" height="100%" width="100%" border="none" sandbox="allow-scripts allow-same-origin" seamless)
+			.not-supported.d-block.d-md-none(style="height: calc(100vh - 56px);")
+				.container.h-100.d-flex.align-items-center
+					.row.d-flex.flex-column.justify-content-center.align-items-center
+						.col-12
+							h4.text-light.text-center.mb-4 Упс, ваше устройство не поддерживается
+							img(src="images/not-supported.svg" style="width: 100%")
+							h4.text-light.text-center.mt-4 Попробуйте зайти с компьютера
 
 	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
